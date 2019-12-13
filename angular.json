@@ -203,6 +203,68 @@
           }
         }
       }
+    },
+    "feature-canvas-render-target": {
+      "projectType": "library",
+      "root": "libs/rendering/feature-canvas-render-target",
+      "sourceRoot": "libs/renderer/src",
+      "prefix": "nq",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/renderer/tsconfig.lib.json",
+              "libs/renderer/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/rendering/feature-canvas-render-target/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/renderer/jest.config.js",
+            "tsConfig": "libs/renderer/tsconfig.spec.json",
+            "setupFile": "libs/renderer/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "rendering-domain": {
+      "projectType": "library",
+      "root": "libs/rendering/domain",
+      "sourceRoot": "libs/rendering/domain/src",
+      "prefix": "neverquest",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/rendering/domain/tsconfig.lib.json",
+              "libs/rendering/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/rendering/domain/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/rendering/domain/jest.config.js",
+            "tsConfig": "libs/rendering/domain/tsconfig.spec.json",
+            "setupFile": "libs/rendering/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

@@ -16,7 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@patpaquette/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@neverquest/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@neverquest/renderer": ["libs/renderer/src/index.ts"],
+      "@neverquest/rendering/domain": ["libs/rendering/domain/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
