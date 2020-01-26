@@ -1,0 +1,8 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "bobae", "camelCase"],
+    "component-selector": [true, "element", "bobae", "kebab-case"],
+    "no-inferrable-types": false
+  }
+}

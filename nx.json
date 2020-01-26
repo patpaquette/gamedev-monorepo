@@ -25,6 +25,18 @@
     },
     "rendering-domain": {
       "tags": []
+    },
+    "battleboard-e2e": {
+      "tags": []
+    },
+    "battleboard": {
+      "tags": []
+    },
+    "battleboard-editor": {
+      "tags": []
+    },
+    "utilities": {
+      "tags": []
     }
   }
 }

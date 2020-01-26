@@ -16,9 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@libs/*": ["libs/*"],
+      "@battleboard/*": ["apps/battleboard/*"],
       "@neverquest/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@neverquest/renderer": ["libs/renderer/src/index.ts"],
-      "@neverquest/rendering/domain": ["libs/rendering/domain/src/index.ts"]
+      "@neverquest/rendering/domain": ["libs/rendering/domain/src/index.ts"],
+      "@nq/utilities": ["libs/utilities/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
